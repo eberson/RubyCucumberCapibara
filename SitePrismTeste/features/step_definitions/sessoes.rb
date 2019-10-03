@@ -1,3 +1,7 @@
 Quando("clico no elemento da sessao.") do
-    pending # Write code here that turns the phrase above into concrete actions
+    @pagina = Pagina.new
+    @pagina.load
+
+    @pagina.navbar.medium.click
+    sleep(5)
 end
